@@ -42,8 +42,8 @@ h1{
 
 #navbar{
 	position:absolute;
-    top:2%;
-	right:5%;
+    bottom:6%;
+	left:5%;
     font-family: 'Work Sans', sans-serif;
     font-size: 20px;
     text-align:left;
@@ -53,12 +53,58 @@ h1{
     border-bottom:1px solid transparent;
 }
 
+#social {
+	position:absolute;
+    bottom:10%;
+	right:5%;
+    height: 20px;
+    text-align:right;
+    padding-top:0px;
+    padding-bottom:1px;
+    border-bottom:1px solid transparent;
+}
+
 #content{
 	position:absolute;
 	top: 20%;
-	left: 20%;
+	left: 15%;
+	width: 70%;
 }
-</style>
+
+#expand {
+    color:#afaeae;
+    text-decoration: none;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;    
+    transition: all .3s;
+}
+ 
+#expand:hover{
+    color:#aebffa;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;    
+    transition: all .3s;
+	cursor:pointer
+}
+
+ul {
+	list-style-type: square;
+}
+</style type="text/javascript">
+
+<script>
+function expand() {
+	document.getElementById("expand").innerHTML = "";
+	document.getElementById("bio").innerHTML = "<br> &nbsp;&nbsp;&#9825;" + 
+	"<ul> <li> watercolor </li> <li> space bars </li> <li> osu! </li> </ul>" +
+	"&nbsp;&nbsp;&#x2623;" +
+	"<ul> <li> WIMPs </li> <li> default colormaps </li> <li> phthalo blue </li> </ul>";
+}
+</script>
 </head>
 
 <body>
@@ -67,10 +113,19 @@ h1{
 	<a href='/resume.pdf'> Resume </a>
 </div>
 
+<div id="social">
+<a href = 'https://twitter.com/reionize'> <img src='/img/twitter.png' width = '40' height = '40'> </a>
+</div>
+
 <div id="content">
 	<h1> Hello. </h1>
 
-	<p> Paragraph text. </p>
+	<p> Hi, my name is Laura, and I'm a junior at Montgomery Blair High School. I'm currently designing a CubeSat to measure particles in the
+	magnetosphere. I also like physics, computing, and nice visual presentation. </p>
+	<p id="bio"> </p>
+	<p id="expand" onClick="expand()"> + more </p>
+	
+	<br>
 </div>
 
 </body>
