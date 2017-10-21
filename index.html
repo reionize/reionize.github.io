@@ -1,6 +1,7 @@
 <html lang="en">
 <head>
 <title> Laura Cui </title>
+<meta name="viewport" content="initial-scale=1, width=device-width"/>
 <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400|Work+Sans:400,500|Lora:300" rel="stylesheet">
 <style type="text/css">
 body {
@@ -9,11 +10,12 @@ body {
 	background-size:cover;
     color: #28282a;
     font-family: 'Work Sans', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     margin: 0;
     padding: 0;
     word-wrap: break-word;
     line-height:150%;
+	position: relative;
 }
 
 a {
@@ -44,10 +46,11 @@ h1{
 
 #navbar{
 	position:absolute;
-    bottom:6%;
-	left:5%;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 20px;
+    bottom:5%;
+	left:15%;
+	width:100%;
+    font-family:'Work Sans', sans-serif;
+    font-size:20px;
     text-align:left;
     padding-top:0px;
     text-transform:lowercase;
@@ -57,9 +60,9 @@ h1{
 
 #social {
 	position:absolute;
-    bottom:10%;
+    top:4%;
 	right:5%;
-    height: 20px;
+    height:20px;
     text-align:right;
     padding-top:0px;
     padding-bottom:1px;
@@ -71,6 +74,13 @@ h1{
 	top: 20%;
 	left: 15%;
 	width: 70%;
+	height: -webkit-fit-content;
+}
+
+#container{
+	position:relative;
+	min-height: 100%;
+	width: 100%;
 }
 
 #expand {
@@ -98,6 +108,8 @@ ul {
 }
 </style>
 
+<!-- really bad formatting stuff - I wanted absolute positioning at first, but it isn't great for unknown screen sizes. sorry :(
+-->
 <script type="text/javascript">
 function expand() {
 	document.getElementById("expand").innerHTML = "";
@@ -105,14 +117,34 @@ function expand() {
 	"<ul> <li> watercolor </li> <li> space bars </li> <li> osu! </li> </ul>" +
 	"&nbsp;&nbsp;&#x2623;" +
 	"<ul> <li> WIMPs </li> <li> default colormaps </li> <li> phthalo blue </li> </ul>";
+	if (document.getElementById("content").offsetHeight > 0.75*document.getElementById("container").offsetHeight) {
+		document.getElementById("content").style.position = "static";
+		document.getElementById("navbar").style.position = "static";
+		document.getElementById("container").style.position = "absolute";
+		document.getElementById("container").style.top = "20%";
+		document.getElementById("container").style.left = "15%";
+		document.getElementById("navbar").innerHTML = document.getElementById("navbar").innerHTML + "<br><br>";
+	}
 }
 </script>
 </head>
 
 <body>
-<div id="navbar">
-	<a href='/projects.html'> Projects </a> &nbsp;&nbsp;&nbsp;
-	<a href='/resume.pdf'> Resume </a>
+<div id="container">
+	<div id="content">
+		<h1> Hello. </h1>
+
+		<p> Hi, my name is Laura, and I'm a junior at Montgomery Blair High School. I'm currently designing a CubeSat to measure particles in the
+		magnetosphere. I also like physics, computing, and nice visual presentation. </p>
+		<p id="bio"> </p>
+		<p id="expand" onClick="expand()"> + more </p>
+		<br>
+	</div>
+
+	<div id="navbar">
+		<a href='/projects.html'> Projects </a> &nbsp;&nbsp;&nbsp;
+		<a href='/resume.pdf'> Resume </a>
+	</div>
 </div>
 
 <div id="social">
@@ -121,18 +153,6 @@ function expand() {
 	<a href = 'https://twitter.com/reionize'> <img src='/img/twitter.png' width = '40' height = '40'> </a> &nbsp;
 	<a href = 'https://instagram.com/reionize'> <img src='/img/instagram.png' width = '40' height = '40'> </a>
 </div>
-
-<div id="content">
-	<h1> Hello. </h1>
-
-	<p> Hi, my name is Laura, and I'm a junior at Montgomery Blair High School. I'm currently designing a CubeSat to measure particles in the
-	magnetosphere. I'm also into physics, computing, and nice visual presentation. </p>
-	<p id="bio"> </p>
-	<p id="expand" onClick="expand()"> + more </p>
-	
-	<br>
-</div>
-
 </body>
 
 </html>
