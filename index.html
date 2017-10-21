@@ -1,13 +1,14 @@
 <html lang="en">
 <head>
 <title> Laura Cui </title>
-<meta name="viewport" content="initial-scale=1, width=device-width"/>
+<meta name="viewport" content="initial-scale=1, width=device-width, user-scalable=no"/>
 <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400|Work+Sans:400,500|Lora:300" rel="stylesheet">
 <style type="text/css">
 body {
     background: #fefeff;
 	background-image: url('/img/bkg.jpg');
 	background-size:cover;
+	background-attachment: fixed;
     color: #28282a;
     font-family: 'Work Sans', sans-serif;
     font-size: 18px;
@@ -16,6 +17,7 @@ body {
     word-wrap: break-word;
     line-height:150%;
 	position: relative;
+	overflow-x:hidden;
 }
 
 a {
@@ -48,7 +50,6 @@ h1{
 	position:absolute;
     bottom:5%;
 	left:15%;
-	width:100%;
     font-family:'Work Sans', sans-serif;
     font-size:20px;
     text-align:left;
@@ -75,6 +76,7 @@ h1{
 	left: 15%;
 	width: 70%;
 	height: -webkit-fit-content;
+	height: -moz-fit-content;
 }
 
 #container{
@@ -116,7 +118,7 @@ function expand() {
 	document.getElementById("bio").innerHTML = "<br> &nbsp;&nbsp;&#9825;" + 
 	"<ul> <li> gradients </li> <li> watercolor </li> <li> space bars </li> <li> osu! </li> </ul>" +
 	"&nbsp;&nbsp;&#x2623;" +
-	"<ul> <li> WIMPs </li> <li> default colormaps </li> li> quarter zip jackets </li> <li> phthalo blue </li> </ul>";
+	"<ul> <li> WIMPs </li> <li> default colormaps </li> <li> quarter zip jackets </li> <li> phthalo blue </li> </ul>";
 	if (document.getElementById("content").offsetHeight > 0.75*document.getElementById("container").offsetHeight) {
 		document.getElementById("content").style.position = "static";
 		document.getElementById("navbar").style.position = "static";

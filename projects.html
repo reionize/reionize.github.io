@@ -1,23 +1,27 @@
 <html lang="en">
 <head>
 <title> Projects </title>
+<meta name="viewport" content="initial-scale=1, width=device-width, user-scalable=no"/>
 <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400|Work+Sans:400,500|Lora:300" rel="stylesheet">
 <style type="text/css">
 body {
     background: #fefeff;
 	background-image: url('/img/bkg.jpg');
 	background-size:cover;
+	background-attachment: fixed;
     color: #28282a;
     font-family: 'Work Sans', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     margin: 0;
     padding: 0;
+	padding-top: 5px;
     word-wrap: break-word;
     line-height:150%;
+	position: relative;
 }
 
 a {
-    color:#827a8e;
+    color:#4a65ae;
     text-decoration: none;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
@@ -42,12 +46,19 @@ h1{
 	font-weight:300;
 }
 
+h2{
+    font-size: 22px;
+    margin:0px;
+    font-family: 'Fira Sans', sans-serif;
+	font-weight:400;
+}
+
 #navbar{
-	position:absolute;
-    bottom:6%;
-	left:5%;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 20px;
+	position:static;
+    bottom:5%;
+	left:15%;
+    font-family:'Work Sans', sans-serif;
+    font-size:20px;
     text-align:left;
     padding-top:0px;
     text-transform:lowercase;
@@ -57,9 +68,9 @@ h1{
 
 #social {
 	position:absolute;
-    bottom:10%;
+    top:4%;
 	right:5%;
-    height: 20px;
+    height:20px;
     text-align:right;
     padding-top:0px;
     padding-bottom:1px;
@@ -67,24 +78,77 @@ h1{
 }
 
 #content{
+	position:static;
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
+}
+
+#container{
 	position:absolute;
 	top: 20%;
 	left: 15%;
 	width: 70%;
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
+}
+
+.scrollbar {
+	margin-left: 0;
+	float: right;
+	height: 100%;
+	background: #fafafa;
+	overflow-y: scroll;
+}
+
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+	background-color: #f2f0fa;
+	border-radius: 8px;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+	background-color: #fafafa;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 18px;
+	background-color: #4a65ae;
 }
 </style>
 </head>
 
 <body>
-<div id="content">
-	<h1> ***under construction*** </h1>
-	<br>
-	<h1> Projects </h1>
-	
-	<p> Check back later for more projects. </p>
-	
-	<br>
-	<a href='/'> back </a>
+<div id="container">
+	<div id="content">
+		<h1> Projects </h1> <br> <br>
+		<h2> Blair3Sat </h2> 
+		<p> <a href="http://www.cubesat.org/"> CubeSats </a> are miniaturized satellites which usually come in sizes of 1U to 6U, each unit 
+			measuring approximately 10 x 10 x 10 cubic centimeters, and provide an opportunity to demonstrate smaller missions. The Blair3Sat 
+			team is designing a satellite to measuring energetic particles at the boundary of the inner and outer Van Allen belts, helping 
+			to both expand space weather research in the magnetosphere and inspire other high school students to explore space. You can read 
+			more about us on <a href="#"> our website. </a>
+		</p> <br>
+		<h2> ISS attitude determination </h2> 
+		<p> I worked with near real-time orbit data from the USGNC (U.S. Guidance, Navigation, and Control) system to determine the field of 
+		view of an instrument installed on the International Space Station. You can read my report <a href="#"> here. </a>
+		</p> <br>
+		<h2> VSOP87 implementation </h2>
+		<p> I implemented VSOP87 in Java using the Neoprogammatics constants generator and calculated the mean solar equinox, comparing it 
+			to Newcomb's calculations. I've uploaded the code to <a href="https://github.com/reionize/vsop87-java"> my GitHub. </a> </p> <br>
+	</div>
+
+	<div id="navbar">
+		<a href='/resume.pdf'> Resume </a> &nbsp;&nbsp;&nbsp;
+		<a href='/'> Back </a> <br><br>
+	</div>
+</div>
+
+<div id="social">
+	<a href = 'mailto:laura.l.cui@gmail.com'> <img src='/img/mail.png' width = '40' height = '40'> </a> &nbsp;
+	<a href = 'https://github.com/reionize'> <img src='/img/github.png' width = '40' height = '40'> </a> &nbsp;
+	<a href = 'https://twitter.com/reionize'> <img src='/img/twitter.png' width = '40' height = '40'> </a> &nbsp;
+	<a href = 'https://instagram.com/reionize'> <img src='/img/instagram.png' width = '40' height = '40'> </a>
 </div>
 </body>
 
