@@ -114,6 +114,30 @@ h1{
 ul {
 	list-style-type: square;
 }
+	
+.scrollbar {
+	margin-left: 0;
+	float: right;
+	height: 100%;
+	background: #fafafa;
+	overflow-y: scroll;
+}
+
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+	background-color: #f2f0fa;
+	border-radius: 8px;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+	background-color: #fafafa;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 18px;
+	background-color: #757a9e;
+}
 </style>
 
 <!-- really bad formatting stuff - I wanted absolute positioning at first, but it isn't great for unknown screen sizes. sorry :(
