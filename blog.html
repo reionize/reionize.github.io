@@ -1,16 +1,16 @@
 <html lang="en">
 <head>
-<title> Laura Cui </title>
+<title> Laura Cui | Blog </title>
 
 <meta name="viewport" content="initial-scale=1, width=device-width, user-scalable=no"/>
 <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400|Work+Sans:400,500|Lora:300" rel="stylesheet">
 <link rel="icon" type="image/png" href="/img/fav.png"/>
-<link rel="canonical" href="https://reionize.github.io">
+<link rel="canonical" href="https://reionize.github.io/blog">
   <meta name="keywords" content="Laura Cui,reionize,blair3sat,stargazings"/>
-  <meta name="description" content="Hi, my name is Laura, and this site was built without the use of a scrolling template."/>
   
 <style type="text/css">
 body {
+    background: #fefeff;
 	background-image: url('/img/bkg.jpg');
 	background-size:cover;
 	background-attachment: fixed;
@@ -19,16 +19,10 @@ body {
     font-size: 18px;
     margin: 0;
     padding: 0;
-	padding-top:5px;
-	overflow-x:hidden;
+	padding-top: 5px;
     word-wrap: break-word;
     line-height:150%;
 	position: relative;
-<<<<<<< HEAD
-	overflow-x:hidden;
-=======
-	overflow-x: hidden;
->>>>>>> origin/master
 }
 
 a {
@@ -57,8 +51,15 @@ h1{
 	font-weight:300;
 }
 
+h2{
+    font-size: 22px;
+    margin:0px;
+    font-family: 'Fira Sans', sans-serif;
+	font-weight:400;
+}
+
 #navbar{
-	position:absolute;
+	position:static;
     bottom:5%;
 	left:15%;
     font-family:'Work Sans', sans-serif;
@@ -79,10 +80,15 @@ h1{
     padding-top:0px;
     padding-bottom:1px;
     border-bottom:1px solid transparent;
-	z-index: 99999999;
 }
 
 #content{
+	position:static;
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
+}
+
+#container{
 	position:absolute;
 	top: 20%;
 	left: 15%;
@@ -91,37 +97,6 @@ h1{
 	height: -moz-fit-content;
 }
 
-#container{
-	position:relative;
-	min-height: 100%;
-	width: 100%;
-	z-index: 999999;
-}
-
-#expand {
-    color:#827a8e;
-    text-decoration: none;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    -o-transition: all .3s;
-    -ms-transition: all .3s;    
-    transition: all .3s;
-}
- 
-#expand:hover{
-    color:#aebffa;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    -o-transition: all .3s;
-    -ms-transition: all .3s;    
-    transition: all .3s;
-	cursor:pointer
-}
-
-ul {
-	list-style-type: square;
-}
-	
 .scrollbar {
 	margin-left: 0;
 	float: right;
@@ -145,47 +120,7 @@ ul {
 	border-radius: 18px;
 	background-color: #757a9e;
 }
-
-#screen{
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-	background-color: #fefeff;
-	z-index: 9999;
-	opacity: 0;
-	animation: fadeout 3.5s ease;
-}
-
-@keyframes fadeout {
-    0% { opacity: 1; }
-	25% { opacity: 0.97; }
-	50% { opacity: 0.85; }
-	75% { opacity: 0.6; }
-    100% { opacity: 0; }
-}
 </style>
-
-<!-- really bad formatting stuff - I wanted absolute positioning at first, but it isn't great for unknown screen sizes. sorry :(
--->
-<script type="text/javascript">
-function expand() {
-	document.getElementById("expand").innerHTML = "";
-	document.getElementById("bio").innerHTML = "<br> &nbsp;&nbsp;&#9825;" + 
-	"<ul> <li> gradients </li> <li> watercolor </li> <li> space bars </li> <li> osu! </li> </ul>" +
-	"&nbsp;&nbsp;&#x2623;" +
-	"<ul> <li> WIMPs </li> <li> default colormaps </li> <li> quarter zip jackets </li> <li> phthalo blue </li> </ul>";
-	if (document.getElementById("content").offsetHeight > 0.75*document.getElementById("container").offsetHeight) {
-		document.getElementById("content").style.position = "static";
-		document.getElementById("navbar").style.position = "static";
-		document.getElementById("container").style.position = "absolute";
-		document.getElementById("container").style.top = "20%";
-		document.getElementById("container").style.left = "15%";
-		document.getElementById("navbar").innerHTML = document.getElementById("navbar").innerHTML + "<br><br>";
-	}
-}
-</script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109224741-1"></script>
@@ -201,20 +136,14 @@ function expand() {
 <body>
 <div id="container">
 	<div id="content">
-		<h1> Hello. </h1>
-
-		<p> Hi, my name is Laura, and I'm a junior at Montgomery Blair High School. I'm currently designing a CubeSat to look at structures in the
-		ionosphere. I also like physics, computing, and nice visual presentation. </p>
-		<p id="bio"> </p>
-		<p id="expand" onClick="expand()"> + more </p>
-		<br>
+		<h1> * * * Coming soon * * * </h1> <br> <br>
 	</div>
 
 	<div id="navbar">
-		reionize &nbsp;&nbsp;&nbsp;
+		<a href='/'> reionize </a> &nbsp;&nbsp;&nbsp;
 		<a href='/projects'> projects </a> &nbsp;&nbsp;&nbsp;
 		<a href='/resume.pdf'> resume </a> &nbsp;&nbsp;&nbsp;
-		<a href='/blog'> blog </a> 
+		blog
 	</div>
 </div>
 
@@ -224,8 +153,6 @@ function expand() {
 	<a href='https://twitter.com/reionize'> <img src='/img/twitter.png' width = '40' height = '40'> </a> &nbsp;
 	<a href='https://instagram.com/reionize'> <img src='/img/instagram.png' width = '40' height = '40'> </a>
 </div>
-
-<div id="screen"> </div>
 </body>
 
 </html>
