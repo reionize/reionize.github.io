@@ -59,7 +59,7 @@ h2{
 }
 
 #navbar{
-	position:static;
+	position:fixed;
     bottom:5%;
 	left:15%;
     font-family:'Work Sans', sans-serif;
@@ -69,6 +69,21 @@ h2{
     text-transform:lowercase;
     padding-bottom:1px;
     border-bottom:1px solid transparent;
+	z-index:9999999;
+}
+
+#navbkg{
+	position:fixed;
+	top:80%;
+	width:100%;
+	height:20%;
+	background:-moz-linear-gradient(top,  rgba(254,254,255,0) 0%, rgba(254,254,255,1) 75%); 
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(254,254,255,0)), color-stop(75%,rgba(254,254,255,1))); 
+    background:-webkit-linear-gradient(top,  rgba(254,254,255,0) 0%,rgba(254,254,255,1) 75%); 
+    background:-o-linear-gradient(top,  rgba(254,254,255,0) 0%,rgba(254,254,255,1) 75%); 
+    background:-ms-linear-gradient(top,  rgba(254,254,255,0) 0%, rbga(254,254,255,1) 75%);
+    background:linear-gradient(to bottom,  rgba(254,254,255,0) 0%,rgba(254,254,255,1) 75%);
+	z-index:999999;
 }
 
 #social {
@@ -136,16 +151,19 @@ h2{
 <body>
 <div id="container">
 	<div id="content">
-		<h1> * * * Coming soon * * * </h1> <br> <br>
+		<h1> blog </h1> <br> <br>
+		this page is under construction
 	</div>
 
 	<div id="navbar">
-		<a href='/'> reionize </a> &nbsp;&nbsp;&nbsp;
+		<a href='/'> // </a> &nbsp;&nbsp;&nbsp;
 		<a href='/projects'> projects </a> &nbsp;&nbsp;&nbsp;
 		<a href='/resume.pdf'> resume </a> &nbsp;&nbsp;&nbsp;
 		blog
 	</div>
 </div>
+
+<div id="navbkg"> &nbsp; </div>
 
 <div id="social">
 	<a href='mailto:laura.l.cui@gmail.com'> <img src='/img/mail.png' width = '40' height = '40'> </a> &nbsp;
