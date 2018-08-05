@@ -3,22 +3,22 @@
 <title> Laura Cui | Blog </title>
 
 <meta name="viewport" content="initial-scale=1, width=device-width, user-scalable=no"/>
-<link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400|Work+Sans:400,500|Lora:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans:100,300,400|Work+Sans:400|Lora:300" rel="stylesheet">
 <link rel="icon" type="image/png" href="/img/fav.png"/>
 <link rel="canonical" href="https://reionize.github.io/blog">
   <meta name="keywords" content="Laura Cui,reionize,blair3sat,stargazings"/>
   
 <style type="text/css">
 body {
-    background: #fefeff;
-	background-image: url('/img/bkg.jpg');
+    background:#fefeff;
+	background-image:url('/img/bkg.jpg');
 	background-size:cover;
 	background-attachment: fixed;
     color: #28282a;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 18px;
-    margin: 0;
-    padding: 0;
+    font-family:'Work Sans', sans-serif;
+    font-size:18px;
+    margin:0;
+    padding:0;
 	padding-top: 5px;
     word-wrap: break-word;
     line-height:150%;
@@ -27,7 +27,7 @@ body {
 
 a {
     color:#757a9e;
-    text-decoration: none;
+    text-decoration:none;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     -o-transition: all .3s;
@@ -35,7 +35,7 @@ a {
     transition: all .3s;
 }
  
-a:hover{
+a:hover {
     color:#aebffa;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
@@ -44,21 +44,21 @@ a:hover{
     transition: all .3s;
 }
 
-h1{
+h1 {
     font-size: 36px;
     margin:0px;
     font-family: 'Fira Sans', sans-serif;
 	font-weight:300;
 }
 
-h2{
+h2 {
     font-size: 22px;
     margin:0px;
     font-family: 'Fira Sans', sans-serif;
 	font-weight:400;
 }
 
-#navbar{
+#navbar {
 	position:fixed;
     bottom:5%;
 	left:15%;
@@ -72,7 +72,7 @@ h2{
 	z-index:9999999;
 }
 
-#navbkg{
+#navbkg {
 	position:fixed;
 	top:80%;
 	width:100%;
@@ -97,19 +97,40 @@ h2{
     border-bottom:1px solid transparent;
 }
 
-#content{
+#content {
 	position:static;
-	height: -webkit-fit-content;
-	height: -moz-fit-content;
+	height:-webkit-fit-content;
+	height:-moz-fit-content;
 }
 
-#container{
+#container {
 	position:absolute;
-	top: 12%;
-	left: 15%;
-	width: 70%;
-	height: -webkit-fit-content;
-	height: -moz-fit-content;
+	top:12%;
+	left:15%;
+	width:70%;
+	height:-webkit-fit-content;
+	height:-moz-fit-content;
+}
+
+.post {
+	position:relative;
+	top:0px;
+}
+
+.postd { 
+    font-size: 18px;
+    margin:0px;
+    font-family: 'Fira Sans', sans-serif;
+	font-weight:100;
+}
+
+.posth {
+	font-weight:300;
+}
+
+.postimg {
+	position:static;
+	max-height:350px;
 }
 
 .scrollbar {
@@ -151,8 +172,13 @@ h2{
 <body>
 <div id="container">
 	<div id="content">
-		<h1> blog </h1> <br> <br>
-		this page is under construction
+		<div class="post">
+			<p class="postd"> June 18, 2018 </p>
+			<h2 class="posth"> This page is under construction </h2> <br> 
+			<img class="postimg" src="/github.jpg"> <br>
+			Unfortunately, this page is still under construction. Please check back later!
+			</div>
+		<br> <br> <br> <br>
 	</div>
 
 	<div id="navbar">
