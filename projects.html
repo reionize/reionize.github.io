@@ -117,11 +117,7 @@ h2{
 	width:100%;
 	height:100%;
 	z-index:-999999;
-}
-
-#bkgimg{
-	min-width:100%;
-	min-height:100%;
+	background-image:url("/img/bkg.jpg");
 	visibility:hidden;
 }
 
@@ -168,7 +164,7 @@ function loadbkg() {
 </head>
 
 <body>
-<div id='bkg'> <img id='bkgimg' src='/img/bkg.jpg' onLoad='loadbkg()'> </div>
+<div id='bkg' onLoad='loadbkg()'> </div>
 <div id="container">
 	<div id="content">
 		<h1> Projects </h1> <br> <br>
