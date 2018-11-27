@@ -62,9 +62,7 @@ h1{
 	width:100%;
 	height:100%;
 	z-index:-999999;
-	background-image:url("/img/bkg.jpg");
 	background-size:cover;
-	visibility:hidden;
 }
 
 #navbar{
@@ -211,7 +209,7 @@ function expand() {
 }
 
 function loadbkg() {
-	document.getElementById("bkg").style.visibility = "visible";
+	document.getElementById("bkg").style.backgroundImage = "url(\"/img/bkg.jpg\")";
 }
 </script>
 
@@ -227,7 +225,7 @@ function loadbkg() {
 </head>
 
 <body>
-<div id='bkg' onLoad='loadbkg()'> </div>
+<div id='bkg'> <img src='/img/bkg.jpg' onLoad='loadbkg()' style='visibility:hidden;'> </div>
 
 <div id="container">
 	<div id="content">
