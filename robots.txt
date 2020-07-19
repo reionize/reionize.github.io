@@ -1,3 +1,7 @@
 User-agent: *
-Disallow: /resume_ii.pdf
+Disallow: /resume_hs.pdf
+Disallow: /art_cv.pdf
+Disallow: /resume_after_hs.pdf
+Disallow: /img/
+Disallow: /abs.pdf
 Sitemap: https://reionize.github.io/sitemap.xml
