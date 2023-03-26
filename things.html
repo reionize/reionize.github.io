@@ -1,27 +1,33 @@
 <html lang="en">
 <head>
-<title> Laura Cui | Things </title>
+<title> Laura Cui | Work </title>
 
 <meta name="viewport" content="initial-scale=1, width=device-width, user-scalable=no"/>
-<link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400|Work+Sans:400|Lora:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400|Work+Sans:300,400|Lora:300|IBM+Plex+Sans:400,500" rel="stylesheet">
 <link rel="icon" type="image/png" href="/img/fav.png"/>
 <link rel="canonical" href="https://reionize.github.io/things">
   <meta name="keywords" content="Laura Cui,reionize,blair3sat,stargazings,reionize projects,Laura Cui projects,Laura Cui physics,reionization"/>
 
 <style type="text/css">
 body {
-    background: #fefeff;
 	background-size:cover;
 	background-attachment: fixed;
     color: #28282a;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     font-size: 18px;
+    font-weight: 400;
     margin: 0;
     padding: 0;
-	padding-top: 5px;
+	padding-top:0px;
+	overflow-x:hidden;
     word-wrap: break-word;
     line-height:150%;
 	position: relative;
+<<<<<<< HEAD
+	overflow-x:hidden;
+=======
+	overflow-x: hidden;
+>>>>>>> origin/master
 }
 
 a {
@@ -47,21 +53,113 @@ h1{
     font-size: 36px;
     margin:0px;
     font-family: 'Work Sans', sans-serif;
-	font-weight:300;
+	font-weight:400;
 }
 
 h2{
-    font-size: 22px;
+    font-size: 24px;
     margin:0px;
     font-family: 'Work Sans', sans-serif;
-	font-weight:300;
+	font-weight:400;
 }
 
 h3{
     font-size: 18px;
-    margin:0px;
-    font-family: 'Work Sans', sans-serif;
-	font-style:bold;
+    margin-top:15px;
+    font-family: 'IBM Plex Sans', sans-serif;
+	font-weight:500;
+}
+
+#bkg{
+	position:fixed;
+	top:0%;
+	width:100%;
+	height:100%;
+	z-index:-999999;
+	background-size:cover;
+}
+
+#navbar{
+	position:fixed;
+    top:5%;
+	left:15%;
+  	width: 70%;
+    font-family:'Work Sans', sans-serif;
+    font-size:20px;
+    text-align:left;
+    padding-top:0px;
+    text-transform:lowercase;
+    padding-top:0px;
+    padding-bottom:1px;
+    border-bottom:1px solid transparent;
+	z-index:999999;
+}
+
+#navbkg{
+	position:fixed;
+	top:70%;
+	width:100%;
+	height:30%;
+	background:-moz-linear-gradient(top,  rgba(254,254,255,0) 0%, rgba(254,254,255,1) 95%);
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(254,254,255,0)), color-stop(95%,rgba(254,254,255,1)));
+    background:-webkit-linear-gradient(top,  rgba(254,254,255,0) 0%,rgba(254,254,255,1) 95%);
+    background:-o-linear-gradient(top,  rgba(254,254,255,0) 0%,rgba(254,254,255,1) 95%);
+    background:-ms-linear-gradient(top,  rgba(254,254,255,0) 0%, rbga(254,254,255,1) 95%);
+    background:linear-gradient(to bottom,  rgba(254,254,255,0) 0%,rgba(254,254,255,1) 95%);
+	z-index:999;
+}
+
+#fadebkg{
+	position:fixed;
+	top:0%;
+	width:100%;
+	height:30%;
+	background:-moz-linear-gradient(bottom,  rgba(254,254,255,0) 40%, rgba(254,254,255,1) 70%);
+    background:-webkit-gradient(linear, left bottom, left top, color-stop(40%,rgba(254,254,255,0)), color-stop(70%,rgba(254,254,255,1)));
+    background:-webkit-linear-gradient(bottom,  rgba(254,254,255,0) 40%,rgba(254,254,255,1) 70%);
+    background:-o-linear-gradient(bottom,  rgba(254,254,255,0) 40%,rgba(254,254,255,1) 70%);
+    background:-ms-linear-gradient(bottom,  rgba(254,254,255,0) 40%, rbga(254,254,255,1) 70%);
+    background:linear-gradient(to top,  rgba(254,254,255,0) 40%,rgba(254,254,255,1) 70%);
+	z-index:999;
+}
+
+/*#social {
+	position:absolute;
+    top:4%;
+	right:5%;
+    height:20px;
+    text-align:right;
+    padding-top:0px;
+    padding-bottom:1px;
+    border-bottom:1px solid transparent;
+	z-index: 9999999;
+}*/
+
+#pagehead{
+	position:absolute;
+	top: 15%;
+	left: 15%;
+	width: 70%;
+	/*height: 10%;
+	height: -webkit-fit-content;
+	height: -moz-fit-content;*/
+	/*z-index:999999;*/
+}
+
+#content{
+	position:absolute;
+	top: 20%;
+	left: 15%;
+	width: 70%;
+	/*height: 70%;
+	height: -webkit-fit-content;
+	height: -moz-fit-content;*/
+}
+
+#container{
+	position:relative;
+	min-height: 100%;
+	width: 100%;
 }
 
 #expand {
@@ -84,67 +182,8 @@ h3{
 	cursor:pointer
 }
 
-#navbar{
-	position:fixed;
-    bottom:5%;
-	left:15%;
-    font-family:'Work Sans', sans-serif;
-    font-size:20px;
-    text-align:left;
-    padding-top:0px;
-    text-transform:lowercase;
-    padding-bottom:1px;
-    border-bottom:1px solid transparent;
-	z-index:999999;
-}
-
-#navbkg{
-	position:fixed;
-	top:70%;
-	width:100%;
-	height:30%;
-	background:-moz-linear-gradient(top,  rgba(254,254,255,0) 0%, rgba(254,254,255,1) 95%);
-    background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(254,254,255,0)), color-stop(95%,rgba(254,254,255,1)));
-    background:-webkit-linear-gradient(top,  rgba(254,254,255,0) 0%,rgba(254,254,255,1) 95%);
-    background:-o-linear-gradient(top,  rgba(254,254,255,0) 0%,rgba(254,254,255,1) 95%);
-    background:-ms-linear-gradient(top,  rgba(254,254,255,0) 0%, rbga(254,254,255,1) 95%);
-    background:linear-gradient(to bottom,  rgba(254,254,255,0) 0%,rgba(254,254,255,1) 95%);
-	z-index:999;
-}
-
-#social {
-	position:absolute;
-    top:4%;
-	right:5%;
-    height:20px;
-    text-align:right;
-    padding-top:0px;
-    padding-bottom:1px;
-    border-bottom:1px solid transparent;
-}
-
-#content{
-	position:static;
-	height: -webkit-fit-content;
-	height: -moz-fit-content;
-}
-
-#container{
-	position:absolute;
-	top: 12%;
-	left: 15%;
-	width: 70%;
-	height: -webkit-fit-content;
-	height: -moz-fit-content;
-}
-
-#bkg{
-	position:fixed;
-	top:0%;
-	width:100%;
-	height:100%;
-	z-index:-999999;
-	background-size:cover;
+ul {
+	list-style-type: square;
 }
 
 .scrollbar {
@@ -170,6 +209,26 @@ h3{
 	border-radius: 18px;
 	background-color: #757a9e;
 }
+
+#screen{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background-color: #fefeff;
+	z-index: -9;
+	opacity: 0;
+	animation: fadeout 3.5s ease;
+}
+
+@keyframes fadeout {
+    0% { opacity: 1; }
+	25% { opacity: 0.97; }
+	50% { opacity: 0.85; }
+	75% { opacity: 0.6; }
+    100% { opacity: 0; }
+}
 </style>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -190,31 +249,35 @@ function loadbkg() {
 </head>
 
 <body>
-<div id='bkg'> <img src='/img/bkg.jpg' onLoad='loadbkg()' style='visibility:hidden;'> </div>
+<div id='bkg'> <img src='./img/bkg.jpg' onLoad='loadbkg()' style='visibility:hidden;'> </div>
+<div id="fadebkg"> &nbsp; </div>
 <div id="container">
+	<div id="pagehead">
+		<h1> Overview </h1>
+	</div>
 	<div id="content">
-    <p> My CV is available <a href="/files/cv.pdf"> here </a> if you want to see a summary of what I've done. Below are some of the highlights as well as other miscellaneous things! </p>
-    <br> <br>
-  	<h2> Teaching </h2> <br>
-		<h3> 18.S097: Proof-Writing Workshop </h3>
-		<p> I helped organize a proofs workshop which was offered as a 3-unit class during MIT's Independent Activities Period in January 2021. You can find my lecture notes <a href="/files/proofs.pdf"> here, </a> or see the <a href="http://uma.mit.edu/18.S097"> course website </a> for the rest of the course materials.
-		</p> <br>
-		<h3> HMMT Education </h3>
-		<p> I gave a talk for high school students at the Spring 2021 Harvard MIT Math Tournament on quantum mechanics and computation. My slides are available <a href="/files/hmmt_edu_21.pdf"> here. </a>
-		</p>
-    <br> <p style="text-align:center"> &#9633; &nbsp; &nbsp; &#9633; &nbsp; &nbsp; 	&#9632; </p> <br>
-  	<h2> Research </h2> <br>
+    <p> I am broadly interested in quantum information and mathematical physics, especially applications in many-body physics, and am also involved in various teaching and outreach activities. My CV is available <a href="/files/cv.pdf"> here </a> if you want to see a more complete summary of what I've worked on. Below are some of the highlights! </p>
+    <br> 
+  	<h2 id="section:research"> Research </h2>
 		<h3> Local scrambling </h3>
 		<p> While working in Prof. John Preskill's group at the Caltech IQIM, I proposed a new definition of local information scrambling for quantum states based on the maximum size of a connected subsystem for which an entangling measurement can be performed. Under certain conditions, this is achieved by random circuits in depth scaling logarithmically with the size of the region. These results has potential implications for quantum complexity and thermalization. See <a href="/files/surf_21.pdf"> here </a> for a write-up on the work.
 		</p>
-    <br> <p style="text-align:center"> 	&#9633; &nbsp; &nbsp; &#9632; &nbsp; &nbsp; 	&#9632; </p> <br>
-  	<h2> Other </h2> <br>
+    <p style="text-align:center"> &#9633; &nbsp; &nbsp; &#9633; &nbsp; &nbsp; 	&#9632; </p>
+  	<h2 id="section:teaching"> Teaching </h2> 
+		<h3> 18.S097: Proof-Writing Workshop </h3>
+		<p> I helped organize a proofs workshop which was offered as a 3-unit class during MIT's Independent Activities Period in January 2021. You can find my lecture notes <a href="/files/proofs.pdf"> here, </a> or see the <a href="http://uma.mit.edu/18.S097"> course website </a> for the rest of the course materials.
+		</p> 
+		<h3> HMMT Education </h3>
+		<p> I gave a talk for high school students at the Spring 2021 Harvard MIT Math Tournament on quantum mechanics and computation. My slides are available <a href="/files/hmmt_edu_21.pdf"> here. </a>
+		</p>
+    <p style="text-align:center"> 	&#9633; &nbsp; &nbsp; &#9632; &nbsp; &nbsp; 	&#9632; </p>
+  	<h2 id="section:other"> Other </h2>
 		<h3> Magnet experiences survey </h3>
 		<p> Along with two fellow Magnet alumni, I designed a survey capturing different aspects of students' experiences in the program. A summary of our results is included in the <a href="http://www.mbhsmagnet.org/news/fall20/alumni-survey"> Fall 2020 Magnet Foundation Newsletter, </a> and our full writeup is available <a href="https://drive.google.com/drive/folders/1oLIlN4I1W-nN9r-OgZGWCubeCtivVRLK"> here. </a>
-		</p> <br>
+		</p>
 		<h3> Quanta </h3>
 		<p> A <a href="/files/quantization.pdf"> short article </a> on the quantization of the electromagnetic field and the history of the quanta for a class paper. I also gave a <a href="/files/photon.pdf"> lightning talk </a> on what are photons, really?
-		</p> <br>
+		</p>
 		<h3> blair3sat </h3>
 		<p> <a href="http://www.cubesat.org/"> CubeSats </a> are miniaturized satellites which usually come in sizes of 1U to 6U, each unit measuring approximately 10 x 10 x 10 cubic centimeters which provide a platform for smaller scale missions. You can read more about the team at <a href="https://blair3sat.com/"> our website. </a>
 		</p>
@@ -222,8 +285,8 @@ function loadbkg() {
 	</div>
 
 	<div id="navbar">
-		<a href='/'> about </a> &nbsp;&nbsp;&nbsp;
-		things &nbsp;&nbsp;&nbsp;
+		<a href='/'> main </a> &nbsp;&nbsp;&nbsp;
+		<u> work</u> &nbsp;&nbsp;&nbsp;
 		<a href='/files/cv.pdf'> cv </a> &nbsp;&nbsp;&nbsp;
 		<a href='https://reionization.wordpress.com'> blog </a>
 	</div>
@@ -231,12 +294,12 @@ function loadbkg() {
 
 <div id="navbkg"> &nbsp; </div>
 
-<div id="social">
+<!-- <div id="social">
 	<a href='mailto:laura.l.cui@gmail.com'> <img src='/img/mail.png' width = '40' height = '40'> </a> &nbsp;
 	<a href='https://twitter.com/reionize'> <img src='/img/twitter.png' width = '40' height = '40'> </a> &nbsp;
 	<a href='https://instagram.com/tlessv'> <img src='/img/instagram.png' width = '40' height = '40'> </a> &nbsp;
 	<a href='https://www.goodreads.com/user/show/90653304-laura-cui'> <img src='/img/goodreads.png' width = '40' height = '40'> </a>
-</div>
+</div> -->
 </body>
 
 </html>

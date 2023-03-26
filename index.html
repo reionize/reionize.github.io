@@ -3,22 +3,23 @@
 <title> Laura Cui </title>
 
 <meta name="viewport" content="initial-scale=1, width=device-width, user-scalable=no"/>
-<link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400|Work+Sans:400|Lora:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400|Work+Sans:300,400|Lora:300|IBM+Plex+Sans:400,500" rel="stylesheet">
 <link rel="icon" type="image/png" href="/img/fav.png"/>
 <link rel="canonical" href="https://reionize.github.io">
-  <meta name="keywords" content="Laura Cui,reionize,blair3sat,stargazings,Laura Cui physics,reionization"/>
-  <meta name="description" content="Hi, my name is Laura, and I'm a senior in Course 8 (physics) at MIT."/>
+  <meta name="keywords" content="Laura Cui,stargazings,Laura Cui physics,Laura Cui reionize"/>
+  <meta name="description" content="Quantum info and space enthusiast, undergrad at MIT."/>
 
 <style type="text/css">
 body {
 	background-size:cover;
 	background-attachment: fixed;
     color: #28282a;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     font-size: 18px;
+    font-weight: 400;
     margin: 0;
     padding: 0;
-	padding-top:5px;
+	padding-top:0px;
 	overflow-x:hidden;
     word-wrap: break-word;
     line-height:150%;
@@ -53,14 +54,21 @@ h1{
     font-size: 36px;
     margin:0px;
     font-family: 'Work Sans', sans-serif;
-	font-weight:300;
+	font-weight:400;
 }
 
 h2{
-    font-size: 22px;
+    font-size: 24px;
     margin:0px;
     font-family: 'Work Sans', sans-serif;
-	font-weight:300;
+	font-weight:400;
+}
+
+h3{
+    font-size: 18px;
+    margin-top:15px;
+    font-family: 'IBM Plex Sans', sans-serif;
+	font-weight:500;
 }
 
 #bkg{
@@ -74,14 +82,15 @@ h2{
 
 #navbar{
 	position:fixed;
-    bottom:5%;
+    top:5%;
 	left:15%;
-  width: 70%;
+  	width: 70%;
     font-family:'Work Sans', sans-serif;
     font-size:20px;
     text-align:left;
     padding-top:0px;
     text-transform:lowercase;
+    padding-top:0px;
     padding-bottom:1px;
     border-bottom:1px solid transparent;
 	z-index:999999;
@@ -101,7 +110,21 @@ h2{
 	z-index:999;
 }
 
-#social {
+#fadebkg{
+	position:fixed;
+	top:0%;
+	width:100%;
+	height:15%;
+	background:-moz-linear-gradient(bottom,  rgba(254,254,255,0) 0%, rgba(254,254,255,1) 50%);
+    background:-webkit-gradient(linear, left bottom, left top, color-stop(0%,rgba(254,254,255,0)), color-stop(50%,rgba(254,254,255,1)));
+    background:-webkit-linear-gradient(bottom,  rgba(254,254,255,0) 0%,rgba(254,254,255,1) 50%);
+    background:-o-linear-gradient(bottom,  rgba(254,254,255,0) 0%,rgba(254,254,255,1) 50%);
+    background:-ms-linear-gradient(bottom,  rgba(254,254,255,0) 0%, rbga(254,254,255,1) 50%);
+    background:linear-gradient(to top,  rgba(254,254,255,0) 0%,rgba(254,254,255,1) 50%);
+	z-index:999;
+}
+
+/*#social {
 	position:absolute;
     top:4%;
 	right:5%;
@@ -111,6 +134,17 @@ h2{
     padding-bottom:1px;
     border-bottom:1px solid transparent;
 	z-index: 9999999;
+}*/
+
+#pagehead{
+	position:absolute;
+	top: 15%;
+	left: 15%;
+	width: 70%;
+	/*height: 10%;
+	height: -webkit-fit-content;
+	height: -moz-fit-content;*/
+	/*z-index:999999;*/
 }
 
 #content{
@@ -118,9 +152,9 @@ h2{
 	top: 20%;
 	left: 15%;
 	width: 70%;
-	height: 70%;
+	/*height: 70%;
 	height: -webkit-fit-content;
-	height: -moz-fit-content;
+	height: -moz-fit-content;*/
 }
 
 #container{
@@ -206,14 +240,13 @@ function expand() {
 	document.getElementById("bio").innerHTML = "<br> &nbsp;&nbsp;&#9825;" +
 	"<ul> <li> black holes </li> <li> watercolor </li> <li> photography </li> <li> osu! </li> </ul>" +
 	"&nbsp;&nbsp;&#x2623;" +
-	"<ul> <li> dim table lamps </li> <li> rainbow colormaps </li> <li> phthalo blue </li> </ul>" +
-  "<br> <br> <br> <br> <br>";
+	"<ul> <li> dim table lamps </li> <li> rainbow colormaps </li> <li> phthalo blue </li> </ul>" ;
 	if (document.getElementById("content").offsetHeight > 0.75*document.getElementById("container").offsetHeight) {
-		document.getElementById("content").style.position = "static";
+		// document.getElementById("content").style.position = "static";
 		//document.getElementById("navbar").style.position = "static";
-		document.getElementById("container").style.position = "absolute";
-		document.getElementById("container").style.top = "20%";
-		document.getElementById("container").style.left = "15%";
+		// document.getElementById("container").style.position = "absolute";
+		// document.getElementById("container").style.top = "20%";
+		// document.getElementById("container").style.left = "15%";
 	}
 }
 
@@ -234,21 +267,31 @@ function loadbkg() {
 </head>
 
 <body>
-<div id='bkg'> <img src='/img/bkg.jpg' onLoad='loadbkg()' style='visibility:hidden;'> </div>
+
+<div id="fadebkg"> &nbsp; </div>
+
+<div id='bkg'> <img src='./img/bkg.jpg' onLoad='loadbkg()' style='visibility:hidden;'> </div>
 
 <div id="container">
+	<div id="pagehead">
+		<h1> Laura Cui<a href="#pronunciation">*</a> </h1>
+	</div>
 	<div id="content">
-		<h1> Hello. </h1>
-
-		<p> Hi, my name is Laura, and I'm a senior in Courses 8 and 18 (physics and math) at MIT. My interests are broadly in quantum information and fundamental physics. I'm also passionate about marine science, education, and nice visual presentation. </p>
+		<img src="./img/polaroids.png" width="250" align="right" style="margin-left:15px;margin-bottom:15px;"/>
+		<img src='./img/mail2.svg' height='24' align="left" style="margin-top:20px;margin-right:10px;text-align:center;"> <p><i>lcui (at) mit (dot) edu</i></p>
+		<p> I'm a senior studying physics and math at MIT. My research interests are broadly in quantum information and fundamental physics. I'm also passionate about marine science, education, and nice visual presentation. </p>
 		<p id="bio"> </p>
 		<p id="expand" onClick="expand()"> + more </p>
 		<br> <br>
+		<h3 id="pronunciation"> Pronunciation </h3>
+		<p> I pronounce my last name similarly to the word "sway". You can also find a pronunciation guide <a href="https://www.youtube.com/watch?v=sjdtQ3QGz8Q">here</a>.
+		</p>
+		<br> <br> <br> <br> <br> <br> <br> <br>
 	</div>
 
 	<div id="navbar">
-    about &nbsp;&nbsp;&nbsp;
-		<a href='/things'> things </a> &nbsp;&nbsp;&nbsp;
+    <u> main</u> &nbsp;&nbsp;&nbsp;
+		<a href='/things'> work </a> &nbsp;&nbsp;&nbsp;
 		<a href='/files/cv.pdf'> cv </a> &nbsp;&nbsp;&nbsp;
 		<a href='https://reionization.wordpress.com'> blog </a>
 	</div>
@@ -256,12 +299,12 @@ function loadbkg() {
 
 <div id="navbkg"> &nbsp; </div>
 
-<div id="social">
+<!-- <div id="social">
 	<a href='mailto:laura.l.cui@gmail.com'> <img src='/img/mail.png' width = '40' height = '40'> </a> &nbsp;
 	<a href='https://twitter.com/reionize'> <img src='/img/twitter.png' width = '40' height = '40'> </a> &nbsp;
 	<a href='https://instagram.com/tlessv'> <img src='/img/instagram.png' width = '40' height = '40'> </a> &nbsp;
 	<a href='https://www.goodreads.com/user/show/90653304-laura-cui'> <img src='/img/goodreads.png' width = '40' height = '40'> </a>
-</div>
+</div> -->
 
 <div id="screen"> </div>
 </body>
