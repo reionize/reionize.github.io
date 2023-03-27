@@ -98,9 +98,9 @@ h3{
 
 #navbkg{
 	position:fixed;
-	top:70%;
+	top:75%;
 	width:100%;
-	height:30%;
+	height:25%;
 	background:-moz-linear-gradient(top,  rgba(254,254,255,0) 0%, rgba(254,254,255,1) 95%);
     background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(254,254,255,0)), color-stop(95%,rgba(254,254,255,1)));
     background:-webkit-linear-gradient(top,  rgba(254,254,255,0) 0%,rgba(254,254,255,1) 95%);
@@ -237,10 +237,8 @@ ul {
 <script type="text/javascript">
 function expand() {
 	document.getElementById("expand").innerHTML = "";
-	document.getElementById("bio").innerHTML = "<br> &nbsp;&nbsp;&#9825;" +
-	"<ul> <li> black holes </li> <li> watercolor </li> <li> photography </li> <li> osu! </li> </ul>" +
-	"&nbsp;&nbsp;&#x2623;" +
-	"<ul> <li> dim table lamps </li> <li> rainbow colormaps </li> <li> phthalo blue </li> </ul>" ;
+	document.getElementById("bio").innerHTML = "&ndash; <i> more about me </i>" +
+	"<p> I grew up in the suburbs of Washington, D.C., leading to my indoctrination in the belief that frozen yogurt is the superior cold dessert. My favorite memories of high school are reading up on all of the different branches of the natural sciences, including everything from celestial mechanics to <a href='https://twitter.com/NOSBRocks/status/988195059660095491'>marine biology</a>. </p> <p> When I'm not thinking about math or physics, I like to <a href='https://www.goodreads.com/user/show/90653304-laura-cui'>read</a>, paint with watercolors, <a href='https://500px.com/reionize'>take pictures of flowers</a>, and work on my slab climbing technique. </p>";
 	if (document.getElementById("content").offsetHeight > 0.75*document.getElementById("container").offsetHeight) {
 		// document.getElementById("content").style.position = "static";
 		//document.getElementById("navbar").style.position = "static";
@@ -277,14 +275,15 @@ function loadbkg() {
 		<h1> Laura Cui<a href="#pronunciation">*</a> </h1>
 	</div>
 	<div id="content">
-		<img src="./img/polaroids.png" width="250" align="right" style="margin-left:15px;margin-bottom:15px;"/>
-		<img src='./img/mail2.svg' height='24' align="left" style="margin-top:20px;margin-right:10px;text-align:center;"> <p><i>lcui (at) mit (dot) edu</i></p>
-		<p> I'm a senior studying physics and math at MIT. My research interests are broadly in quantum information and fundamental physics. I'm also passionate about marine science, education, and nice visual presentation. </p>
+		<img src="./img/polaroids.png" width="250" align="right" style="margin-left:15px;margin-bottom:15px;margin-top:25px;max-width:48%"/>
+		<p> I'm a senior studying physics and math at MIT. My research interests are broadly in quantum information and fundamental physics. You can find a summary of my work <a href="/things">here</a>, or see my <a href="./files/cv.pdf">CV</a> for a more complete list of things I've done. </p>
+		<p> I am committed to increasing access to opportunities in STEM, particularly for students from underrepresented backgrounds. I currently serve on the <a href="https://physvals.mit.edu">MIT Physics Values Committee</a>, which advises the Department of Physics on issues relating to climate. I am also interested in designing better <a href="/things#proofs-workshop">curriculum</a> and edtech systems to support higher education in STEM. </p>
 		<p id="bio"> </p>
-		<p id="expand" onClick="expand()"> + more </p>
-		<br> <br>
-		<h3 id="pronunciation"> Pronunciation </h3>
-		<p> I pronounce my last name similarly to the word "sway". You can also find a pronunciation guide <a href="https://www.youtube.com/watch?v=sjdtQ3QGz8Q">here</a>.
+		<p id="expand" onClick="expand()"> + more about me </p>
+		<br> 
+		<img src='./img/mail2.svg' height='24' align="left" style="margin-top:20px;margin-right:10px;text-align:center;"> <p><i>lcui (at) mit (dot) edu</i></p>
+		<br>
+		<p id="pronunciation"> <a href="#pronunciation" style="font-family:'Work Sans';">*</a> I pronounce my last name similarly to the word "sway". You can also find a pronunciation guide <a href="https://www.youtube.com/watch?v=sjdtQ3QGz8Q">here</a>.
 		</p>
 		<br> <br> <br> <br> <br> <br> <br> <br>
 	</div>
