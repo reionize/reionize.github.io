@@ -3,7 +3,7 @@
 <title> Laura Cui </title>
 
 <meta name="viewport" content="initial-scale=1, width=device-width, user-scalable=no"/>
-<link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400|Work+Sans:300,400|Lora:300|IBM+Plex+Sans:400,500" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400|Work+Sans:300,400|Lora:300|IBM+Plex+Sans:300,400,500|Nanum+Myeongjo" rel="stylesheet">
 <link rel="icon" type="image/png" href="/img/fav.png"/>
 <link rel="canonical" href="https://reionize.github.io">
   <meta name="keywords" content="Laura Cui,stargazings,Laura Cui physics,Laura Cui reionize"/>
@@ -32,7 +32,7 @@ body {
 }
 
 a {
-    color:#757a9e;
+    color:#14588a;
     text-decoration: none;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
@@ -42,7 +42,7 @@ a {
 }
 
 a:hover{
-    color:#aebffa;
+    color:#48b0b6;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     -o-transition: all .3s;
@@ -165,7 +165,7 @@ h3{
 }
 
 #expand {
-    color:#827a8e;
+    color:#14588a;
     text-decoration: none;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
@@ -175,7 +175,7 @@ h3{
 }
 
 #expand:hover{
-    color:#aebffa;
+    color:#48b0b6;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     -o-transition: all .3s;
@@ -198,7 +198,7 @@ ul {
 
 ::-webkit-scrollbar-track {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
-	background-color: #f2f0fa;
+	background-color: #f2fafe;
 	border-radius: 8px;
 }
 
@@ -209,7 +209,7 @@ ul {
 
 ::-webkit-scrollbar-thumb {
 	border-radius: 18px;
-	background-color: #757a9e;
+	background-color: #14588a;
 }
 
 #screen{
@@ -239,7 +239,7 @@ ul {
 function expand() {
 	document.getElementById("expand").innerHTML = "";
 	document.getElementById("bio").innerHTML = "&ndash; <i> more about me </i>" +
-	"<p> I grew up in the suburbs of Washington, D.C., leading to my indoctrination in the belief that frozen yogurt is the superior cold dessert. My favorite memory of high school is reading up on all of the different branches of the natural sciences, including everything from celestial mechanics to <a href='https://twitter.com/NOSBRocks/status/988195059660095491'>marine biology</a>. </p> <p> When I'm not thinking about math or physics, I like to <a href='https://www.goodreads.com/user/show/90653304-laura-cui'>read</a>, paint with watercolors, <a href='https://500px.com/reionize'>take pictures of flowers</a>, and work on my slab climbing technique. I also write <a href='https://reionization.wordpress.com'>mediumform</a> and <a href='https://twitter.com/reionize'>veryshortform content (Twitter)</a>. </p>";
+	"<p> I grew up in the suburbs of Washington, D.C., leading to my indoctrination in the belief that frozen yogurt is the superior cold dessert. My favorite memory of high school is competing in science bowl and reading up on everything from celestial mechanics to <a href='https://twitter.com/NOSBRocks/status/988195059660095491'>marine biology</a>. </p> <p> When I'm not thinking about math or physics, I like to <a href='https://www.goodreads.com/user/show/90653304-laura-cui'>read</a>, paint with watercolors, <a href='https://500px.com/reionize'>take pictures of flowers</a>, go on long walks in the rain, and work on my slab climbing technique. I also write <a href='https://reionization.wordpress.com'>mediumform</a> and <a href='https://twitter.com/reionize'>veryshortform content (Twitter)</a>. </p>";
 	if (document.getElementById("content").offsetHeight > 0.75*document.getElementById("container").offsetHeight) {
 		// document.getElementById("content").style.position = "static";
 		//document.getElementById("navbar").style.position = "static";
@@ -250,7 +250,7 @@ function expand() {
 }
 
 function loadbkg() {
-	document.getElementById("bkg").style.backgroundImage = "url(\"/img/bkg.jpg\")";
+	document.getElementById("bkg").style.backgroundImage = "url(\"./img/bkg2.jpg\")";
 }
 </script>
 
@@ -277,7 +277,7 @@ function loadbkg() {
 	</div>
 	<div id="content">
 		<img src="./img/polaroids.png" width="250" align="right" style="margin-left:15px;margin-bottom:15px;margin-top:25px;max-width:48%"/>
-		<p> I'm a senior studying physics and math at MIT. My research interests are broadly in quantum information and fundamental physics. You can find a summary of my work <a href="/things">here</a>, or see my <a href="./files/cv.pdf">CV</a> for a more complete list of things I've done. </p>
+		<p> I'm currently finishing up my bachelor's in physics and math at MIT before I start a PhD at Caltech in the fall. My research interests are broadly in quantum information and fundamental physics. You can find a summary of my research and teaching work <a href="/things">here</a>, or see my <a href="./files/cv.pdf">CV</a> for a more complete list of things I've done. </p>
 		<p> I am committed to increasing access to opportunities in STEM, particularly for students from underrepresented backgrounds. I currently serve on the <a href="https://physvals.mit.edu">MIT Physics Values Committee</a>, which advises the department on issues relating to climate. I am also interested in designing better <a href="/things#proofs-workshop">curriculum</a> and edtech systems to support STEM education. </p>
 		<p id="bio"> </p>
 		<p id="expand" onClick="expand()"> + more about me </p>
