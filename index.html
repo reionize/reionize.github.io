@@ -17,7 +17,7 @@
 function expand() {
 	document.getElementById("expand").innerHTML = "";
 	document.getElementById("bio").innerHTML = "&ndash; <i> more about me </i>" +
-	"<p> I grew up in the suburbs of Washington, D.C., leading to my indoctrination in the belief that frozen yogurt is the superior cold dessert. My favorite memory of high school is competing in science bowl and reading up on everything from celestial mechanics to <a href='https://twitter.com/NOSBRocks/status/988195059660095491'>marine biology</a>. </p> <p> When I'm not thinking about math or physics, I like to <a href='https://www.goodreads.com/user/show/90653304-laura-cui'>read</a>, paint with watercolors, <a href='https://500px.com/reionize'>take pictures of flowers</a>, go on long walks, and work on my slab climbing technique. I occasionally write <a href='https://reionization.wordpress.com'>mediumform</a> and <a href='https://twitter.com/reionize'>veryshortform content (Twitter)</a>. </p>";
+	"<p> I grew up in the suburbs of Washington, D.C., leading to my indoctrination in the belief that frozen yogurt is the superior cold dessert. My favorite memory of high school is competing in science bowl and reading up on everything from celestial mechanics to <a href='https://twitter.com/NOSBRocks/status/988195059660095491'>marine biology</a>. </p> <p> When I'm not thinking about math or physics, I like to <a href='https://www.goodreads.com/user/show/90653304-laura-cui'>read</a>, paint with watercolors, <a href='https://500px.com/reionize'>take pictures of flowers</a>, go on long walks, and work on my slab climbing technique. I occasionally write <a href='https://reionization.wordpress.com'>mediumform</a> and <a href='https://twitter.com/reionize'>veryshortform content (tweets)</a>. </p>";
 	if (document.getElementById("content").offsetHeight > 0.75*document.getElementById("container").offsetHeight) {
 		// document.getElementById("content").style.position = "static";
 		//document.getElementById("navbar").style.position = "static";
@@ -43,7 +43,7 @@ function loadbkg() {
 </script>
 </head>
 
-<body>
+<body id="top">
 
 <div id="fadebkg"> &nbsp; </div>
 
@@ -60,9 +60,10 @@ function loadbkg() {
 		<p id="bio"> </p>
 		<p id="expand" onClick="expand()"> + more about me </p>
 		<br> 
-		<img src='./img/mail2.svg' height='24' align="left" style="margin-top:20px;margin-right:10px;text-align:center;"> <p style="margin-bottom:-28px"><i>lcui (at) caltech (dot) edu</i></p> <br>
-		<img src='./img/window.png' height='24' align="left" style="margin-top:20px;margin-right:10px;text-align:center;"> <p style="margin-bottom:36px"><i>B160 west bridge </i></p>
-		<p id="pronunciation"> <a href="#pronunciation" style="font-family:'Work Sans';">*</a> I pronounce my last name similarly to the word "sway". You can also find a pronunciation guide <a href="https://www.youtube.com/watch?v=sjdtQ3QGz8Q">here</a>.
+		<img src='./img/mail2.svg' height='24' align="left" style="margin-top:20px;margin-right:12px;text-align:center;"> <p style="margin-bottom:-28px"><i>lcui (at) caltech (dot) edu</i></p> <br>
+		<img src='./img/window.png' height='24' align="left" style="margin-top:20px;margin-right:12px;text-align:center;"> <p style="margin-bottom:-28px"><i>B160 west bridge </i></p> <br>
+		<img src='./img/mailbox.png' height='28' align="left" style="margin-top:20px;margin-right:8px;text-align:center;"> <p style="margin-bottom:36px"><i>1200 e. california blvd mc 103-33 </i></p>
+		<p id="pronunciation"> <a href="#top" style="font-family:'Work Sans';">*</a> I pronounce my last name like the word "sway". You can also find a pronunciation guide <a href="https://www.youtube.com/watch?v=sjdtQ3QGz8Q">here</a>.
 		</p>
 	</div>
 

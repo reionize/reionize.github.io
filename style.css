@@ -110,7 +110,7 @@ h3{
     background:-o-linear-gradient(bottom,  rgba(254,254,249,0) 0%,rgba(254,254,249,1) 50%);
     background:-ms-linear-gradient(bottom,  rgba(254,254,249,0) 0%, rbga(254,254,249,1) 50%);
     background:linear-gradient(to top,  rgba(254,254,249,0) 0%,rgba(254,254,249,1) 50%);
-	z-index:999;
+	z-index:99999;
 }
 
 /*#social {
@@ -133,7 +133,7 @@ h3{
 	/*height: 10%;
 	height: -webkit-fit-content;
 	height: -moz-fit-content;*/
-	/*z-index:999999;*/
+	z-index:999;
 }
 
 #content{
