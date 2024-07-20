@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+<title> Laura Cui | CV </title>
+
+<meta name="viewport" content="initial-scale=1, width=device-width, user-scalable=no"/>
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400|Work+Sans:300,400|Lora:300|IBM+Plex+Sans:400,500|Monofett" rel="stylesheet">
+<link rel="icon" type="image/png" href="/img/fav.png"/>
+<link rel="canonical" href="https://reionize.github.io/temp">
+  <meta name="keywords" content="Laura Cui,reionize,blair3sat,stargazings,reionize projects,Laura Cui projects,Laura Cui physics,reionization"/>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109224741-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109224741-1');
+</script>
+
+<script type="text/javascript">
+function loadbkg() {
+	document.getElementById("bkg").style.backgroundImage = "url(\"/img/bkg2.JPG\")";
+}
+
+function loadsecret() {
+	const t = document.getElementById("secret");
+	const rows = [];
+	for (let i=0; i<8; i++) {
+		let r = t.insertRow(0);
+		rows.push(r);
+	}
+	// console.log('test');
+	let pixels = "";
+	fetch("./files/pixels.txt").then(e => e.text()).then(txt => {
+		pixels = txt;
+	})
+	const cols = pixels.trim().split(" ");
+	for (const c of cols) {
+		for (let i=0; i<8; i++) {
+			let cell = rows[i].insertCell();
+			cell.textContent = c.charAt(i);
+		}
+	}
+}
+</script>
+</head>
+
+<body onload="loadsecret()">
+<!-- <div id='bkg'> <img src='./img/bkg.jpg' onLoad='loadbkg()' style='visibility:hidden;'> </div> -->
+<div id="fadebkg"> &nbsp; </div>
+<div id="container">
+	<div id="pagehead">
+		<h1> *** This page is under construction *** </h1>
+	</div>
+	<div id="content">
+	<br>
+    <table id="secret" style="font-family: 'Monofett'; font-size: 12;"> </table>
+    <br> <br> <br>
+	</div>
+
+	<div id="navbar">
+		<a href='/'> main </a> &nbsp;&nbsp;&nbsp;
+		<a href='/things'> work </a> &nbsp;&nbsp;&nbsp;
+		<u> cv</u> &nbsp;&nbsp;&nbsp;
+		<a href='https://reionize.substack.com'> blog </a>
+	</div>
+</div>
+
+<!-- <div id="navbkg"> &nbsp; </div> -->
+
+<!-- <div id="social">
+	<a href='mailto:laura.l.cui@gmail.com'> <img src='/img/mail.png' width = '40' height = '40'> </a> &nbsp;
+	<a href='https://twitter.com/reionize'> <img src='/img/twitter.png' width = '40' height = '40'> </a> &nbsp;
+	<a href='https://instagram.com/tlessv'> <img src='/img/instagram.png' width = '40' height = '40'> </a> &nbsp;
+	<a href='https://www.goodreads.com/user/show/90653304-laura-cui'> <img src='/img/goodreads.png' width = '40' height = '40'> </a>
+</div> -->
+</body>
+
+</html>
