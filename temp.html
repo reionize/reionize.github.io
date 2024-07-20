@@ -37,17 +37,20 @@ function loadsecret() {
 	.then(function(response) {
 		response.text().then(function(text) {
 			pixels = text;
-		});
-	});
-	console.log(pixels);
-	const cols = pixels.trim().split(" ");
-	for (const c of cols) {
-		console.log(c);
-		for (let i=0; i<8; i++) {
-			let cell = rows[i].insertCell();
-			cell.textContent = c.charAt(i);
+			console.log(pixels);
+			const cols = pixels.trim().split(" ");
+			for (const c of cols) {
+				// console.log(c);
+				for (let i=0; i<8; i++) {
+					let cell = rows[i].insertCell();
+					let d = c.charAt(i);
+					cell.textContent = d;
+					if (d === "0") { cell.style="color: #fefefa;" }
+					else if (d === "1") { cell.style="background-color: #28282a;" }
 		}
 	}
+		});
+	});
 }
 </script>
 </head>
