@@ -34,7 +34,7 @@ function loadsecret() {
 	}
 	let pixels = "";
 	fetch("./files/pixels.txt").then(e => e.text()).then(txt => {
-		pixels = txt;
+		pixels = txt.toString();
 	})
 	console.log(pixels);
 	const cols = pixels.trim().split(" ");
