@@ -32,10 +32,13 @@ function loadsecret() {
 		let r = t.insertRow(0);
 		rows.push(r);
 	}
-	let pixels = "";
-	fetch("./files/pixels.txt").then(e => e.text()).then(txt => {
-		pixels = txt.toString();
-	})
+	var pixels;
+	fetch('https://reionize.github.io/files/pixels.txt')
+	.then(function(response) {
+		response.text().then(function(text) {
+			pixels = text;
+		});
+	});
 	console.log(pixels);
 	const cols = pixels.trim().split(" ");
 	for (const c of cols) {
