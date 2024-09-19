@@ -13,6 +13,7 @@ body {
     word-wrap: break-word;
     line-height:170%;
 	position: relative;
+	/*float:left;*/
 <<<<<<< HEAD
 	overflow-x:hidden;
 =======
@@ -149,7 +150,7 @@ h3{
 
 #container{
 	position:relative;
-	min-height: 100%;
+	height: 100%;
 	width: 100%;
 }
 
