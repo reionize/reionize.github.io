@@ -4,14 +4,14 @@ body {
 	background-color: #fefefa;
     color: #28282a;
     font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 400;
     margin: 0;
     padding: 0;
 	padding-top:0px;
 	overflow-x:hidden;
     word-wrap: break-word;
-    line-height:170%;
+    line-height:150%;
 	position: relative;
 	/*float:left;*/
 <<<<<<< HEAD
@@ -41,22 +41,22 @@ a:hover{
 }
 
 h1{
-    font-size: 36px;
+    font-size: 30px;
     margin:0px;
     font-family: 'Work Sans', sans-serif;
 	font-weight:400;
 }
 
 h2{
-    font-size: 24px;
+    font-size: 22px;
     margin:0px;
     font-family: 'Work Sans', sans-serif;
 	font-weight:400;
 }
 
 h3{
-    font-size: 18px;
-    margin-top:15px;
+    font-size: 16px;
+    margin-top:16px;
     font-family: 'IBM Plex Sans', sans-serif;
 	font-weight:500;
 }
@@ -73,8 +73,8 @@ h3{
 #navbar{
 	position:fixed;
     top:5%;
-	left:15%;
-  	width: 70%;
+	left:10%;
+  	width: 80%;
     font-family:'Work Sans', sans-serif;
     font-size:20px;
     text-align:left;
@@ -129,8 +129,8 @@ h3{
 #pagehead{
 	position:absolute;
 	top: 15%;
-	left: 15%;
-	width: 70%;
+	left: 10%;
+	width: 80%;
 	/*height: 10%;
 	height: -webkit-fit-content;
 	height: -moz-fit-content;*/
@@ -140,8 +140,8 @@ h3{
 #content{
 	position:absolute;
 	top: 20%;
-	left: 15%;
-	width: 70%;
+	left: 10%;
+	width: 80%;
 	/*height: 70%;
 	height: -webkit-fit-content;
 	height: -moz-fit-content;*/
