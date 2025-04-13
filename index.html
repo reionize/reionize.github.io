@@ -15,7 +15,7 @@
 function expand() {
 	document.getElementById("expand").innerHTML = "";
 	document.getElementById("bio").innerHTML = "&ndash; <i> more about me </i>" +
-	"<p> I grew up in the suburbs of Washington, D.C., where I competed in science bowl and became indoctrinated in the belief that frozen yogurt is the superior cold dessert. </p> <p> When I'm not thinking about math or physics, I like to <a href='https://www.goodreads.com/user/show/90653304-laura-cui'>read</a>, paint with watercolors, <a href='https://500px.com/reionize'>take pictures of flowers</a>, go on long walks, and work on my slab climbing technique. I occasionally write non-technical <a href='https://reionization.wordpress.com'>mediumform</a> and <a href='https://twitter.com/reionize'>veryshortform content (tweets)</a>. </p>";
+	"<p> I grew up in the suburbs of Washington, D.C., where I competed in science bowl and became indoctrinated in the belief that frozen yogurt is the superior cold dessert. </p> <p> When I'm not thinking about math or physics, I like to <a href='https://www.goodreads.com/user/show/90653304-laura-cui'>read</a>, paint with watercolors, <a href='https://500px.com/reionize'>take pictures of flowers</a>, go on long walks, and work on my slab climbing technique. I occasionally write non-technical <a href='https://reionization.wordpress.com'>mediumform</a> and <a href='https://twitter.com/reionize'>veryshortform content (tweets)</a>. </p> <h3> Textbook astrology </h3> <p> Although I first learned quantum mechanics from Griffiths (second edition), </i> my favorite introductory texts are Zwiebach and Shankar. </p> <table><tr><td><img src='http://math.jhu.edu/~savitt/GTM/doob.jpg' width=120 height=182 alt=''></td><td><p>If I were a Springer-Verlag Graduate Text in Mathematics, I would be J.L. Doob's <b><i>Measure Theory</i></b>.</p><p>I am different from other books on measure theory in that I accept probability theory as an essential part of measure theory. This means that many examples are taken from probability; that probabilistic concepts such as independence, Markov processes, and conditional expectations are integrated into me rather than being relegated to an appendix; that more attention is paid to the role of algebras than is customary; and that the metric defining the distance between sets as the measure of their symmetric difference is exploited more than is customary. </p><p>Which Springer GTM would <i>you</i> be? <a href='http://math.jhu.edu/~savitt/GTM.html'>The Springer GTM Test</a></p></td></tr></table>";
 	if (document.getElementById("content").offsetHeight > 0.75*document.getElementById("container").offsetHeight) {
 		// document.getElementById("content").style.position = "static";
 		//document.getElementById("navbar").style.position = "static";
@@ -31,6 +31,7 @@ function loadbkg() {
 
 function polaroids() {
 	document.getElementById("profile").src = "./img/polaroids.png";
+	document.getElementById("profile").style = "cursor:help;";
 }
 
 function profile() {
@@ -45,6 +46,8 @@ function profile() {
 	else{
 		document.getElementById("profile").src = "./img/one.jpg";
 	}
+
+	// document.getElementById("profile").style = "cursor:auto;";
 }
 </script>
 
@@ -71,8 +74,9 @@ function profile() {
 	</div>
 	<div id="content">
 		<img id="profile" src="./img/one.jpg" width="250" align="right" onmouseover="polaroids()" onmouseout="profile()" style="margin-left:15px;margin-bottom:15px;margin-top:25px;max-width:40%"/>
-		<p> I'm currently a PhD student in physics at Caltech, where I'm fortunate to be co-advised by John Preskill and Fernando Brand&#227;o. Previously, I completed my bachelor's in physics and math at MIT, and wrote my <a href="https://dspace.mit.edu/handle/1721.1/151497"> senior thesis </a> on the application of random circuits to study many-body quantum dynamics. For more, you can view my <a href="./files/cv.pdf">CV</a> or read about the highlights <a href="/things">here</a>. </p>
-		<p> I am committed to increasing access to opportunities in STEM, particularly for students from nontraditional backgrounds. I previously served on the <a href="https://physvals.mit.edu">MIT Physics Values Committee</a> and worked on <a href="/things#proofs-workshop">writing curriculum</a> for students without prior experience in proof-based mathematics. </p>
+		<p> I'm currently a PhD student in physics at Caltech, where I'm fortunate to be co-advised by John Preskill and Fernando Brand&#227;o. Previously, I completed my bachelor's in physics and math at MIT. </p>
+		<p> I am broadly interested in the intersection of information theory and quantum many-body physics, particularly in ways of characterizing quantum complexity. I wrote my <a href="https://dspace.mit.edu/handle/1721.1/151497"> undergrad thesis </a> on the application of random circuits to study many-body quantum dynamics. </p>
+		<p> In addition, I am committed to increasing access to opportunities in STEM, particularly for students from nontraditional backgrounds. I previously served on the <a href="https://physvals.mit.edu">MIT Physics Values Committee</a> and worked on <a href="/things#proofs-workshop">writing curriculum</a> for students without prior experience in proof-based mathematics. For more, you can see my <a href="./files/cv.pdf">CV</a> or read about the highlights <a href="/things">here</a>. </p>
 		<p id="bio"> </p>
 		<p id="expand" onClick="expand()"> + more about me </p>
 		<br> 

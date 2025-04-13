@@ -21,6 +21,10 @@ body {
 >>>>>>> origin/master
 }
 
+b {
+	font-weight:500;
+}
+
 a {
     color:#14588a;
     text-decoration: none;
@@ -59,6 +63,11 @@ h3{
     margin-top:16px;
     font-family: 'IBM Plex Sans', sans-serif;
 	font-weight:500;
+}
+
+th, td {
+  padding: 4.5px;
+  vertical-align: top;
 }
 
 #bkg{
