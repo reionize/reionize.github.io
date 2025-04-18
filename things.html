@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <title> Laura Cui | Work </title>
@@ -25,6 +26,29 @@ function loadbkg() {
 	document.getElementById("bkg").style.backgroundImage = "url(\"/img/bkg2.JPG\")";
 }
 </script>
+
+<!-- Load KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+
+<!-- The loading of KaTeX is deferred to speed up page rendering -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+
+<!-- To automatically render math in text elements, include the auto-render extension: -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+onload="renderMathInElement(document.body);"></script>
+
+<!-- <script type="text/javascript">
+	function loadMath(){
+		const macros = {};
+		const mathElements = ["katexloglogdesigns"];
+		for (let element of mathElements) {
+			katex.render(document.getElementById(element).textContent, element, {
+			throwOnError: false,
+			macros
+    		})
+		}
+	}
+</script> -->
 </head>
 
 <body>
@@ -42,10 +66,13 @@ function loadbkg() {
 		<p style="margin-top:-16px;"> with Aram Harrow and Daniel Ranard </p> -->
 		<!-- <b> <a href=""> tba </a> </b> <br> -->
 		<table>
-			<tr> <td> <h3> [1] </h3> </td> <td> <h3> Probing local many-body dynamics with random quantum circuits </h3>
+			<tr> <td> <h3> [1] </h3> </td> <td> <h3> Simple constructions for random states and unitaries in depth <span id="katexloglogdesigns" style="font-size:0.98em;"> \( \mathsf{log} \, \mathsf{log} \, \mathsfit{n} \) </span> </h3>
+		<p style="margin-top:-16px;"> with Fernando Brand&#227;o and Thomas Schuster, 2025 </p>
+		<b> <a href="mailto:lcui(at)caltech(dot)edu"> (in preparation) </a> </b> </td> </tr>
+			<tr> <td> <h3> [2] </h3> </td> <td> <h3> Probing local many-body dynamics with random quantum circuits </h3>
 		<p style="margin-top:-16px;"> MIT Department of Physics Senior Thesis, 2023 </p>
 		<b> <a href="/files/senior_thesis.pdf"> pdf </a> </b> &nbsp; <b> <a href="https://dspace.mit.edu/handle/1721.1/151497"> online </a> </b> </td> </tr>
-			<tr> <td> <h3> [2] </h3> </td> <td> <h3> Local information scrambling in random quantum circuits </h3>
+			<tr> <td> <h3> [3] </h3> </td> <td> <h3> Local information scrambling in random quantum circuits </h3>
 		<p style="margin-top:-16px;"> with Alexander Dalzell and Hsin-Yuan (Robert) Huang, 2021 </p>
 		<b> <a href="/files/surf_21.pdf"> pdf </a> </b> </td> </tr>
 		</table>
