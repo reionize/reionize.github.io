@@ -89,8 +89,8 @@ th, td {
 #navbar{
 	position:fixed;
     top:5vh;
-	left:10vw;
-  	width: 80vw;
+	left: max(10vw,calc(50vw - 500px));
+  	width: min(80vw,1000px);
     font-family:'Work Sans', sans-serif;
     font-size:min(20px,calc(18px + .25vw));
     text-align:left;
@@ -145,8 +145,8 @@ th, td {
 #pagehead{
 	position:absolute;
 	top: 15vh;
-	left: 10vw;
-	width: 80vw;
+  	width: min(80vw,1000px);
+	left: max(10vw,calc(50vw - 500px));
 	/*height: 10%;
 	height: -webkit-fit-content;
 	height: -moz-fit-content;*/
@@ -156,8 +156,8 @@ th, td {
 #content{
 	position:absolute;
 	top: 20vh;
-	left: 10vw;
-	width: 80vw;
+  	width: min(80vw,1000px);
+	left: max(10vw,calc(50vw - 500px));
 	/*height: 70%;
 	height: -webkit-fit-content;
 	height: -moz-fit-content;*/
