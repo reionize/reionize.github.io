@@ -4,15 +4,16 @@ body {
 	background-color: #fefefa;
     color: #28282a;
     font-family: 'IBM Plex Sans', sans-serif;
+    font-size:16px;
     font-size: min(16px,calc(14px + .25vw));
     font-weight: 400;
+    line-height:144%;
     margin: 0;
+	overflow-x:hidden;
     padding: 0;
 	padding-top:0px;
-	overflow-x:hidden;
-    word-wrap: break-word;
-    line-height:144%;
 	position: relative;
+    word-wrap: break-word;
 	/*float:left;*/
 <<<<<<< HEAD
 	overflow-x:hidden;
@@ -22,8 +23,10 @@ body {
 }
 
 p {
-	margin-top: min(12px,calc(10px + .25vw));
+	margin-bottom: 8px;
+	margin-top: 12px;
     margin-bottom: min(8px,calc(7px + .12vw));
+	margin-top: min(12px,calc(10px + .25vw));
 }
 
 a {
@@ -46,52 +49,62 @@ a:hover{
 }
 
 h1{
-    font-size: min(30px,calc(24px + .5vw));
-    margin:0px;
     font-family: 'Work Sans', sans-serif;
+    font-size: 30px;
+    font-size: min(30px,calc(24px + .5vw));
 	font-weight:400;
+    margin:0px;
 }
 
 h2{
-    font-size: min(20px,calc(18px + .25vw));
     font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    font-size: min(20px,calc(18px + .25vw));
 	font-weight:400;
 	margin-left:0px;
-    margin-top: min(20px,calc(18px + .25vw));
+	margin-bottom: 8px;
     margin-bottom: min(8px,calc(7px + .12vw));
+    margin-top: 20px;
+    margin-top: min(20px,calc(18px + .25vw));
 }
 
 h3{
-    font-size: min(16px,calc(14px + .25vw));
-    margin-top: min(8px,calc(7px + .12vw));
-    margin-bottom: min(6px,calc(4px + .12vw));
     font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 16px;
+    font-size: min(16px,calc(14px + .25vw));
 	font-weight:500;
+	margin-bottom: 6px;
+    margin-bottom: min(6px,calc(4px + .12vw));
+    margin-bottom: 8px;
+    margin-top: min(8px,calc(7px + .12vw));
 }
 
 th, td {
+  padding-bottom: 0px;
   padding-right: 6px;
   padding-top: 0px;
-  padding-bottom: 0px;
   vertical-align: top;
   margin: 0px;
 }
 
 #bkg{
+	background-size:cover;
 	position:fixed;
 	top:0vh;
-	width:100vw;
 	height:100vh;
+	width:100vw;
 	z-index:-999999;
-	background-size:cover;
 }
 
 #navbar{
 	position:fixed;
     top:5vh;
+    left:10vw;
 	left: max(10vw,calc(50vw - 500px));
+	width:80vw;
   	width: min(80vw,1000px);
     font-family:'Work Sans', sans-serif;
+    font-size:20px;
     font-size:min(20px,calc(18px + .25vw));
     text-align:left;
     padding-top:0px;
@@ -145,7 +158,9 @@ th, td {
 #pagehead{
 	position:absolute;
 	top: 15vh;
+	width: 80vw;
   	width: min(80vw,1000px);
+  	left: 10vw;
 	left: max(10vw,calc(50vw - 500px));
 	/*height: 10%;
 	height: -webkit-fit-content;
@@ -156,7 +171,9 @@ th, td {
 #content{
 	position:absolute;
 	top: 20vh;
+	width: 80vw;
   	width: min(80vw,1000px);
+  	left: 10vw;
 	left: max(10vw,calc(50vw - 500px));
 	/*height: 70%;
 	height: -webkit-fit-content;
