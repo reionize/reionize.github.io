@@ -8,7 +8,7 @@
 <link rel="icon" type="image/png" href="/img/fav.png"/>
 <link rel="canonical" href="https://reionize.github.io">
   <meta name="keywords" content="Laura Cui,stargazings,Laura Cui physics,Laura Cui reionize"/>
-  <meta name="description" content="Quantum info and space enthusiast, undergrad at MIT."/>
+  <meta name="description" content="Quantum info and space enthusiast."/>
 
 <link rel="stylesheet" type="text/css" href="./style.css">
 
@@ -16,7 +16,7 @@
 function expand() {
 	document.getElementById("expand").innerHTML = "";
 	document.getElementById("bio").innerHTML = "&ndash; <i> more about me </i>" +
-	"<p> I grew up in the suburbs of Washington, D.C., where I competed in science bowl and became indoctrinated in the belief that frozen yogurt is the superior cold dessert. </p> <p> When I'm not thinking about math or physics, I like to <a href='https://www.goodreads.com/user/show/90653304-laura-cui'>read</a>, paint with watercolors, <a href='https://500px.com/reionize'>take pictures of flowers</a>, go on long walks, and work on my slab climbing technique. I occasionally write non-technical <a href='https://reionization.wordpress.com'>mediumform</a> and <a href='https://twitter.com/reionize'>veryshortform content (tweets)</a>. </p> <h3> Textbook astrology </h3> <p> Although I first learned quantum mechanics from Griffiths (second edition), </i> my favorite introductory texts are Zwiebach and Shankar. </p> <div id='gtmtest'> <img src='http://math.jhu.edu/~savitt/GTM/doob.jpg' align='left' alt='' style='margin-right:12px;margin-bottom:6px;width=20px;max-width:24%;'> <p> If I were a Springer-Verlag Graduate Text in Mathematics, I would be J.L. Doob's <b><i>Measure Theory</i></b>.</p><p>I am different from other books on measure theory in that I accept probability theory as an essential part of measure theory. This means that many examples are taken from probability; that probabilistic concepts such as independence, Markov processes, and conditional expectations are integrated into me rather than being relegated to an appendix; that more attention is paid to the role of algebras than is customary; and that the metric defining the distance between sets as the measure of their symmetric difference is exploited more than is customary. </p><p>Which Springer GTM would <i>you</i> be? <a href='http://math.jhu.edu/~savitt/GTM.html'>The Springer GTM Test</a></p></div> ";
+	"<p> I grew up in the suburbs of Washington, D.C., where I competed in science bowl and became indoctrinated in the belief that frozen yogurt is the superior cold dessert. </p> <p> When I'm not thinking about math or physics, I like to <a href='https://www.goodreads.com/user/show/90653304-laura-cui'>read</a>, paint with watercolors, <a href='https://500px.com/reionize'>take pictures of flowers</a>, go on long walks, and work on my slab climbing technique. I occasionally write non-technical <a href='https://reionize.substack.com'>mediumform</a> and <a href='https://twitter.com/reionize'>veryshortform content (tweets)</a>. </p> <h3> Textbook astrology </h3> <p> Although I first learned quantum mechanics from Griffiths (second edition), </i> my favorite introductory texts are Zwiebach and Shankar. </p> <div id='gtmtest'> <img src='http://math.jhu.edu/~savitt/GTM/doob.jpg' align='left' alt='' style='margin-right:12px;margin-bottom:6px;width=20px;max-width:24%;'> <p> If I were a Springer-Verlag Graduate Text in Mathematics, I would be J.L. Doob's <b><i>Measure Theory</i></b>.</p><p>I am different from other books on measure theory in that I accept probability theory as an essential part of measure theory. This means that many examples are taken from probability; that probabilistic concepts such as independence, Markov processes, and conditional expectations are integrated into me rather than being relegated to an appendix; that more attention is paid to the role of algebras than is customary; and that the metric defining the distance between sets as the measure of their symmetric difference is exploited more than is customary. </p><p>Which Springer GTM would <i>you</i> be? <a href='http://math.jhu.edu/~savitt/GTM.html'>The Springer GTM Test</a></p></div> ";
 	document.getElementById("bio").style = "background-color: #f0f2f2; padding-top:6px; padding-bottom: 6px; padding-left:12px; padding-right:12px; margin-top:6px; overflow: hidden;"
 	// if (document.getElementById("content").offsetHeight > 0.75*document.getElementById("container").offsetHeight) {
 		// document.getElementById("content").style.position = "static";
@@ -66,20 +66,28 @@ function profile() {
 
 <body id="top">
 
-<div id="fadebkg"> &nbsp; </div>
+<!-- <div id="fadebkg"> &nbsp; </div> -->
 
 <!-- <div id='bkg'> <img src='./img/bkg.jpg' onLoad='loadbkg()' style='visibility:hidden;'> </div> -->
 
 <div id="container">
+
+	<div id="navbar-ii">
+    <u> main</u> &nbsp;&nbsp;&nbsp;
+		<a href='#section:research'> work </a> &nbsp;&nbsp;&nbsp;
+		<a href='./files/cv.pdf'> cv </a> &nbsp;&nbsp;&nbsp;
+		<a href='https://reionize.substack.com'> blog </a>
+	</div>
+
 	<div id="pagehead">
 		<h1> Laura Cui<a href="#pronunciation">*</a> </h1>
 	</div>
 	<div id="content">
 		<div id="intro" style="overflow:hidden;">
 		<img id="profile" src="./img/one.jpg" width="250" align="right" onmouseover="polaroids()" onmouseout="profile()" style="margin-left:15px;margin-bottom:15px;margin-top:15px;max-width:40%;cursor:help;"/>
-		<p> I'm currently a PhD student in physics at Caltech, where I'm fortunate to be co-advised by John Preskill and Fernando Brand&#227;o. I completed my bachelor's in physics and math at MIT in 2023. </p>
+		<p> I'm currently a PhD student at Caltech, where I'm fortunate to be co-advised by John Preskill and Fernando Brand&#227;o. I completed my bachelor's in physics and math at MIT in 2023. </p>
 		<p> I'm broadly interested in the intersection of information theory and quantum many-body physics, particularly in ways of characterizing quantum complexity. </p> 
-		<p> In addition, I am committed to increasing access to opportunities in STEM, particularly for students from nontraditional backgrounds. I previously served on the <a href="https://physvals.mit.edu">MIT Physics Values Committee</a> and worked on <a href="/things#proofs-workshop">writing curriculum</a> for students without prior experience in proof-based mathematics. </p> <p> For more on my work, see my <a href="./files/cv.pdf">CV</a> (last updated July 2025) or check out the highlights <a href="/things">here</a>. </p>
+		<p> In addition, I am committed to increasing access to opportunities in STEM, particularly for students from nontraditional backgrounds. <!-- I previously served on the <a href="https://physvals.mit.edu">MIT Physics Values Committee</a> and worked on <a href="/things#proofs-workshop">writing curriculum</a> for students without prior experience in proof-based mathematics. --> </p> <p> For more on my work, see my <a href="./files/cv.pdf">CV</a> (last updated July 2025) or check out the highlights below! </p>
 		</div>
 		
 		<div id="bio"> </div>
@@ -92,14 +100,51 @@ function profile() {
 		</table>
 		<p id="pronunciation"> <a href="#top" style="font-family:'Work Sans';">*</a> I pronounce my last name like the word "sway". You can also find a pronunciation guide <a href="https://www.youtube.com/watch?v=sjdtQ3QGz8Q">here</a>.
 		</p>
+		<br> <hr> <br>
+  		<h2 id="section:research"> Selected publications and preprints </h2>
+  		<p> Feel free to also check <a href='https://scholar.google.com/citations?user=CzT3W5MAAAAJ'>Google Scholar</a> for an up-to-date list of posted papers. </p>
+		<!-- <h3> Decay of spurious topological entanglement entropy in the trivial phase (TBA) </h3>
+		<p style="margin-top:-16px;"> with Aram Harrow and Daniel Ranard </p> -->
+		<!-- <b> <a href=""> tba </a> </b> <br> -->
+		<table>
+			<!-- <tr> <td> <h3> [3] </h3> </td> <td> <h3> Random unitaries from Hamiltonian dynamics </h3>
+		<b> <a href="mailto:lcui(at)caltech(dot)edu"> (in preparation) </a> </b> </td> </tr>
+			<tr> <td> <h3> [2] </h3> </td> <td> <h3> Random unitaries that conserve energy </h3>
+		<b> <a href="mailto:lcui(at)caltech(dot)edu"> (in preparation) </a> </b> </td> </tr> -->
+			<tr> <td> <h3> [?] </h3> </td> <td> <h3> Hamiltonians and random unitaries </h3>
+		<b> <a href="mailto:lcui(at)caltech(dot)edu"> (in preparation) </a> </b> </td> </tr>
+			<!-- <tr> <td> <h3> [1] </h3> </td> <td> <h3> Simple constructions for random states and unitaries in depth <span id="katexloglogdesigns" style="font-size:0.98em;"> \( \mathsf{log} \, \mathsf{log} \, \mathsfit{n} \) </span> </h3>
+		<b> <a href="mailto:lcui(at)caltech(dot)edu"> (in preparation) </a> </b> </td> </tr> -->
+			<tr> <td> <h3> [1] </h3> </td> <td> <h3> Unitary designs in nearly optimal depth </h3>
+		<p style="margin-top:-0px;"> <b>LC,*</b> Thomas Schuster,* Fernando Brand&#227;o, and Hsin-Yuan (Robert) Huang, 2025 </p> <p style="margin-top:-4px;"> <i> * denotes co-first authors </i> </p>
+		<b> <a href="/files/optimal_depth_designs_v2.pdf"> pdf </a> </b> &nbsp; <b> <a href="https://arxiv.org/abs/2507.06216"> arxiv </a> </b> </td> </tr>
+			<!-- <tr> <td> <h3> [2] </h3> </td> <td> <h3> Probing local many-body dynamics with random quantum circuits </h3>
+		<p style="margin-top:-0px;"> <b>LC,</b> MIT Department of Physics Senior Thesis supervised by Aram Harrow, 2023 </p>
+		<b> <a href="/files/senior_thesis.pdf"> pdf </a> </b> &nbsp; <b> <a href="https://dspace.mit.edu/handle/1721.1/151497"> online </a> </b> </td> </tr>
+			<tr> <td> <h3> [3] </h3> </td> <td> <h3> Local information scrambling in random quantum circuits </h3>
+		<p style="margin-top:-0px;"> <b>LC,</b> supervised by John Preskill, Alexander Dalzell, and Hsin-Yuan (Robert) Huang, 2021 </p>
+		<b> <a href="/files/surf_21.pdf"> pdf </a> </b> </td> </tr> -->
+		</table>
+    	<br>
+  		<h2 id="section:teaching"> Highlighted teaching and outreach </h2> 
+  		<table>
+			<tr> <td> <h3> [3] </h3> </td> <td> <h3> Caltech FUTURE of Physics </h3> <p> I co-chaired the 2025 iteration of <a href="https://future.pma.caltech.edu"> FUTURE, </a> a workshop designed to help undergraduate students navigate the graduate school application process. </p> </td> </tr>
+  			<tr> <td> <h3> [2] </h3> </td> <td> <h3 id="proofs-workshop"> 18.S097: Proof-Writing Workshop </h3>
+		<p> I helped organize a proofs workshop which was offered as a 3-unit class during MIT's Independent Activities Period in January 2021. You can find my lecture notes <a href="/files/proofs.pdf"> here, </a> or see the <a href="http://uma.mit.edu/18.S097"> course website </a> for the rest of the materials. 
+		</p>  </td> </tr>
+			<tr> <td> <h3> [1] </h3> </td> <td> <h3> HMMT Education </h3>
+		<p> I gave a talk for high school students at the February and November 2021 iterations of HMMT (formerly known as the Harvard-MIT Mathematics Tournament) on quantum mechanics and information theory. My slides are available <a href="/files/hmmt_edu.pdf"> here. </a>
+		</p> </td> </tr>
+  		</table>
+    	<br> <br>
 	</div>
 
-	<div id="navbar">
+	<!-- <div id="navbar">
     <u> main</u> &nbsp;&nbsp;&nbsp;
 		<a href='/things'> work </a> &nbsp;&nbsp;&nbsp;
 		<a href='/files/cv.pdf'> cv </a> &nbsp;&nbsp;&nbsp;
 		<a href='https://reionize.substack.com'> blog </a>
-	</div>
+	</div> -->
 </div>
 
 <!-- <div id="navbkg"> &nbsp; </div> -->
